@@ -1,6 +1,13 @@
 # MineInterview — Immersive Minecraft AI Mock Interview Platform
 
-An immersive, voice-first mock interview application that transports candidates into a polished Minecraft-inspired world, face-to-face with an adaptive AI interviewer powered exclusively by Google Gemini.
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Vercel-00E5C3?style=for-the-badge&logo=vercel&logoColor=white)](https://ai-interview-ashy-omega.vercel.app)
+[![Powered by Gemini](https://img.shields.io/badge/Powered%20By-Google%20Gemini-4285F4?style=for-the-badge&logo=google&logoColor=white)](https://aistudio.google.com/)
+[![React 19](https://img.shields.io/badge/Frontend-React%20%2B%20Three.js-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
+[![FastAPI](https://img.shields.io/badge/Backend-FastAPI%20%2B%20Python-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
+
+> 🎮 **Live Website**: **[https://ai-interview-ashy-omega.vercel.app](https://ai-interview-ashy-omega.vercel.app)**
+>
+> Practice realistic job interviews with an adaptive AI interviewer inside an immersive, cinematic Minecraft-inspired 3D world — powered exclusively by the **Google Gemini API**.
 
 ---
 
