@@ -1,0 +1,170 @@
+:root {
+  /* Authentic Minecraft Palette */
+  --mc-deep-bg: #0d1117;
+  --mc-stone: #3a3f47;
+  --mc-stone-light: #525964;
+  --mc-stone-dark: #22252a;
+  --mc-dark-oak: #382415;
+  --mc-spruce: #2a1a0e;
+  --mc-wood-light: #6e4627;
+  --mc-grass: #4b772c;
+  --mc-dirt: #573a21;
+
+  /* The Single Signature Accent: Ancient City / Sculk Cyan */
+  --mc-cyan: #00E5C3;
+  --mc-cyan-glow: rgba(0, 229, 195, 0.35);
+  --mc-cyan-dark: #008f7a;
+
+  /* Ambient Lighting */
+  --mc-lantern: #f59e0b;
+  --mc-text-main: #f1f5f9;
+  --mc-text-muted: #94a3b8;
+  --mc-hud-bg: rgba(14, 18, 23, 0.88);
+  --mc-hud-border: #2d333b;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--mc-deep-bg);
+  color: var(--mc-text-main);
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+  line-height: 1.5;
+}
+
+/* Pixel Font strictly for Titles, Buttons, Short Game HUD Labels */
+.pixel-font {
+  font-family: 'VT323', monospace;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* Minecraft Classic Button Styling */
+.mc-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.65rem 1.4rem;
+  background-color: #3b424c;
+  color: #ffffff;
+  font-family: 'VT323', monospace;
+  font-size: 1.35rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  box-shadow: 
+    inset -2px -4px 0px rgba(0, 0, 0, 0.6),
+    inset 2px 2px 0px rgba(255, 255, 255, 0.25),
+    0 4px 10px rgba(0, 0, 0, 0.4);
+  transition: all 0.08s ease-in-out;
+  user-select: none;
+}
+
+.mc-btn:hover {
+  background-color: #4b5461;
+  filter: brightness(1.1);
+}
+
+.mc-btn:active {
+  box-shadow: 
+    inset 2px 2px 0px rgba(0, 0, 0, 0.7),
+    inset -1px -1px 0px rgba(255, 255, 255, 0.1);
+  transform: translateY(2px);
+}
+
+/* Signature Sculk Cyan Button */
+.mc-btn-cyan {
+  background-color: #00a38b;
+  color: #0b151a;
+  font-weight: bold;
+  box-shadow: 
+    inset -2px -4px 0px #006b5b,
+    inset 2px 2px 0px #70fff0,
+    0 0 16px var(--mc-cyan-glow);
+}
+.mc-btn-cyan:hover {
+  background-color: var(--mc-cyan);
+  box-shadow: 
+    inset -2px -4px 0px #008f7a,
+    inset 2px 2px 0px #a3fff5,
+    0 0 24px var(--mc-cyan-glow);
+}
+
+/* Wood Button */
+.mc-btn-wood {
+  background-color: #5c3b21;
+  color: #fce7cf;
+  box-shadow: 
+    inset -2px -4px 0px #382415,
+    inset 2px 2px 0px #8a5833,
+    0 4px 8px rgba(0, 0, 0, 0.4);
+}
+.mc-btn-wood:hover {
+  background-color: #6e4627;
+}
+
+/* Redstone Cancel/End Button */
+.mc-btn-red {
+  background-color: #991b1b;
+  box-shadow: 
+    inset -2px -4px 0px #5f1111,
+    inset 2px 2px 0px #dc2626,
+    0 4px 8px rgba(0, 0, 0, 0.4);
+}
+.mc-btn-red:hover {
+  background-color: #b91c1c;
+}
+
+.mc-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Minecraft Inventory / HUD Panel */
+.mc-hud-panel {
+  background: var(--mc-hud-bg);
+  backdrop-filter: blur(10px);
+  border: 2px solid var(--mc-hud-border);
+  box-shadow: 
+    inset -2px -2px 0px rgba(0, 0, 0, 0.6),
+    inset 2px 2px 0px rgba(255, 255, 255, 0.08),
+    0 16px 40px rgba(0, 0, 0, 0.6);
+  border-radius: 4px;
+}
+
+/* Minecraft Inventory Slot Item */
+.mc-slot {
+  background-color: #12151b;
+  border: 2px solid #232832;
+  box-shadow: 
+    inset 2px 2px 0px rgba(0, 0, 0, 0.8),
+    inset -1px -1px 0px rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+}
+
+.mc-slot.active {
+  border-color: var(--mc-cyan);
+  box-shadow: 
+    inset 2px 2px 0px rgba(0, 0, 0, 0.8),
+    0 0 10px var(--mc-cyan-glow);
+}
+
+/* Minecraft Dirt/Stone Texture Background for Loading Screens */
+.mc-dirt-bg {
+  background-color: #2b1d12;
+  background-image: 
+    radial-gradient(#1f140c 15%, transparent 16%),
+    radial-gradient(#3a2719 15%, transparent 16%);
+  background-size: 16px 16px;
+  background-position: 0 0, 8px 8px;
+}

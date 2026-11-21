@@ -1,0 +1,10 @@
+{
+  "name": "mineinterview-app",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "cd frontend && npm install && npm run build",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:backend": "uvicorn main:app --app-dir backend --reload --port 8001"
+  }
+}
